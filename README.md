@@ -26,4 +26,7 @@ data = Tools().search_group(name='groupname', public=False, cursor=None)
 # public: bool, desc = filter group public only or all group
 # cursor: str, default set None
 # output/data: list
+
+for group in data:
+    print(group.id, group.url, group.name, group.images, group.desc_text)
 ```
