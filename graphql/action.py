@@ -21,7 +21,7 @@ class Action:
         open('/sdcard/x.htm', 'w').write(str(post))
 
         if 'Batalkan Permintaan' in post:
-            return Response(success=True, data={'id': id'}, message=None)
+            return Response(success=True, data={'id': id}, message=None)
         else:
             return Response(success=False, message='Response Error! please check target or your account.')
 
